@@ -28,7 +28,7 @@ This applicaiton can manage  time effectively
 
 ## Screenshots
 
-<img src="./assets/images/image.png">
+<img src="./Assets/images/image.png">
 
 ## Technologies
 
