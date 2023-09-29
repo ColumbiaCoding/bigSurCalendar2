@@ -16,10 +16,10 @@
 The Work Day Scheduler App is devleoped to be add important events to a daily planner
 
 ## Links
-<a href="https://github.com/ColumbiaCoding/bigSurCalendar">Link to Github Repo</a>
+<a href="https://github.com/ColumbiaCoding/bigSurCalendar2">Link to Github Repo</a>
 
 
-<a href="https://columbiacoding.github.io/bigSurCalendar/">Link to Deployed Site</a>
+<a href="https://columbiacoding.github.io/bigSurCalendar2/">Link to Deployed Site</a>
 
 
 ## Purpose
