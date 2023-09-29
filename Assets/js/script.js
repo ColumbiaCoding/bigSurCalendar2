@@ -59,15 +59,17 @@
 //   // TODO: Add code to display the current date in the header of the page.
 // });
 
+//Simplfing code to the following functions. 
+
 $(function () {
-  // Display the current date in the header
+  // Using Days.js to display the current date in the header
   var currentDate = dayjs().format("dddd, MMMM D, YYYY");
   $("#currentDay").text(currentDate);
 
-  // Get the current hour using Day.js
+  // Defining thecurrent hour using Day.js
   var currentHour = dayjs().hour();
 
-  // Iterate through each time block
+  // Using the "for-each" iteration through each time slot
   $(".time-block").each(function () {
     var timeBlockId = $(this).attr("id");
     var blockHour = parseInt(timeBlockId.split("-")[1]);
@@ -81,14 +83,14 @@ $(function () {
       $(this).removeClass("past present").addClass("future");
     }
 
-    // Retrieve and set user input from local storage
+    // Enabling the app to retrieve and set user input from local storage
     var savedInput = localStorage.getItem(timeBlockId);
     if (savedInput) {
       $(this).find(".description").val(savedInput);
     }
   });
 
-  // Add a click event listener for the save buttons
+  // Creating an 'on-click'  event listener for the save buttons
   $(".saveBtn").on("click", function () {
     var timeBlockId = $(this).parent().attr("id");
     var userInput = $(this).siblings(".description").val();
